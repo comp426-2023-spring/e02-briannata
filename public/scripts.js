@@ -26,3 +26,14 @@ function toggleDropDown() {
         dropdown.style.display = 'inline';
     }
 }
+
+function togglePopUp() {
+    var popup = document.getElementsByClassName("popup")[0];
+
+    if(popup.style.display == 'inline') {
+        popup.style.display = 'none';
+    }
+    else {
+        popup.style.display = 'inline';
+    }
+}
