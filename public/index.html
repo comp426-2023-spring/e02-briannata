@@ -1,12 +1,51 @@
 <html>
     <head>
-        <title>Rock</title>
-        <!-- Link to your script file(s) and CSS in here somewhere -->
+        <title>RPS(LS)</title>
+        <script src="./scripts.js"></script>
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
 
-    <!-- Your interface markup goes here -->
-    <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
+    <div class="container">
+        <h1>Welcome to RPSLS! Choose your game...</h1>
+
+        <br>
+        <br>
+
+        <div class="row">
+            <p>RPS</p>
+            <label class="switch">
+                <input type="checkbox" onChange="toggleRPSLS()">
+                <span class="slider round"></span>
+            </label>
+            <p>RPSLS</p>
+        </div>
+
+        <div class="row">
+            <p>Against Opponent?</p>
+            <label class="switch">
+                <input type="checkbox" onChange="toggleDropDown()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="dropdown">
+            <label>Choose:</label>
+
+            <select name="options" id="options">
+                <option value="rock">Rock</option>
+                <option value="paper">Paper</option>
+                <option value="scissors">Scissors</option>
+                <option value="lizard" class="rpsls">Lizard</option>
+                <option value="spock" class="rpsls">Spock</option>
+            </select>
+        </div>
+
+        <br>
+
+        <button onClick="play()">Play!</button>
+
+    </div>
 
     </body>
 </html>
