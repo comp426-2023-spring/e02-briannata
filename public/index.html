@@ -36,6 +36,7 @@
             <label>Choose:</label>
 
             <select name="options" id="options">
+                <option disabled selected value> -- select -- </option>
                 <option value="rock">Rock</option>
                 <option value="paper">Paper</option>
                 <option value="scissors">Scissors</option>
@@ -46,7 +47,10 @@
 
         <br>
 
-        <button onClick="play()">Play!</button>
+        <div class="row buttons">
+            <button onClick="play()">Play!</button>
+            <button onClick="reset()">Reset</button>
+        </div>
 
         <div class="popup">
             <h2>Rules for Classic Rock, Paper, Scissors (RPS)</h2>
@@ -69,6 +73,14 @@
                 <li>Spock VAPORIZES Rock</li>
                 <li>Rock CRUSHES Scissors</li>
             </ul>
+        </div>
+
+        <div class="resultPopup">
+            <h2 id="result"></h2>
+            <p id="player"></p>
+            <p id="opponent"></p>
+
+            <button onClick="startOver()" class="startOverBtn">Start Over</button>
         </div>
 
     </div>
