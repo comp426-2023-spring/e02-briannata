@@ -53,7 +53,7 @@
     {
       "name": "Screenshot interface",
       "setup": "",
-      "run": "ls",
+      "run": "ls docs",
       "input": "",
       "output": "01-interface",
       "comparison": "included",
@@ -63,7 +63,7 @@
     {
       "name": "Screenshot results",
       "setup": "",
-      "run": "ls",
+      "run": "ls docs",
       "input": "",
       "output": "02-result",
       "comparison": "included",
