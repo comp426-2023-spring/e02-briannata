@@ -11,7 +11,7 @@
 
     <div class="container">
         <h1>Welcome to RPSLS! Choose your game...</h1>
-        <i class="fas fa-circle-info" onClick="togglePopUp()"></i>
+        <i class="fas fa-circle-info" onclick="togglePopUp()"></i>
 
         <br>
         <br>
@@ -19,7 +19,7 @@
         <div class="row">
             <p>RPS</p>
             <label class="switch">
-                <input type="checkbox" onChange="toggleRPSLS()">
+                <input type="checkbox" onchange="toggleRPSLS()">
                 <span class="slider round"></span>
             </label>
             <p>RPSLS</p>
@@ -28,7 +28,7 @@
         <div class="row">
             <p>Against Opponent?</p>
             <label class="switch">
-                <input type="checkbox" onChange="toggleDropDown()">
+                <input type="checkbox" onchange="toggleDropDown()">
                 <span class="slider round"></span>
             </label>
         </div>
@@ -49,8 +49,8 @@
         <br>
 
         <div class="row buttons">
-            <button onClick="play()">Play!</button>
-            <button onClick="reset()">Reset</button>
+            <button onclick="play()" type="submit">Play!</button>
+            <button onclick="reset()" type="submit">Reset</button>
         </div>
 
         <div class="popup">
@@ -81,7 +81,7 @@
             <p id="player"></p>
             <p id="opponent"></p>
 
-            <button onClick="startOver()" class="startOverBtn">Start Over</button>
+            <button onclick="startOver()" class="startOverBtn" type="submit">Start Over</button>
         </div>
 
     </div>

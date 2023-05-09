@@ -24,7 +24,6 @@
     right: 0;
     bottom: 0;
     background-color: #8d84b3;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
@@ -36,7 +35,6 @@
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
   }
   
@@ -50,7 +48,6 @@
   
   input:checked + .slider:before {
     -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
   }
   
@@ -161,9 +158,8 @@ i:hover {
   background-color: #22094a;
   color: #cac3eb;
   position: absolute;
-  width: 60vw;
-  height: 40vh;
-  left: 18vw;
+  width: 40vw;
+  left: 27vw;
   top: 20vh;
   z-index: 1;
   border-radius: 50px;
